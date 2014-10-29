@@ -82,10 +82,21 @@ different methods to help us with our list.
 *remove(node) will remove the given node from the list, wherever it might be. Return the node's value. If it isn't found, return nil.
 *to_s() will print a comma-separated list of all values in the list, whatever they might be: "12, 'sam', :item, 'tango', 42"
 
+We build a basic double linked list in class and this is what we came up
+with.  I'm referencing this a lot to write this assignment (although,
+this is javascript I feel it still applies here.)
 
-###Usage
-```Ruby
+```Javascript
+function Car(plate, prev, next) {
+  this.plate = plate;
+  this.prev = prev;
+  this.next = next;
 
+  // this.remove = function() {
+  //  this.prev.next = this.next;
+  //  this.next.prev = this.prev;
+  // };
+}
 ```
 
 ## References:
