@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'insertion_sort'
+require 'merge_sort'
 
 describe 'Merge Sort' do
 
@@ -11,7 +11,8 @@ describe 'Merge Sort' do
   end
 
   it 'should sort an array of repeated elements' do
-    Sort.merge_sort([5, 3, 2, 5, 3, 2, 5, 3, 2]).must_equal [2, 2, 2, 3, 3, 3, 5, 5, 5]
+    Sort.merge_sort([5, 3, 2, 5, 3, 2, 3, 2]
+      ).must_equal [2, 2, 2, 3, 3, 3, 5, 5]
   end
 
   it 'should return nil if called on an empty array' do

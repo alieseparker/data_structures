@@ -11,7 +11,8 @@ describe 'Insertion Sort' do
   end
 
   it 'should sort an array of repeated elements' do
-    Sort.insertion_sort([5, 3, 2, 5, 3, 2, 5, 3, 2]).must_equal [2, 2, 2, 3, 3, 3, 5, 5, 5]
+    Sort.insertion_sort([5, 3, 2, 5, 3, 2, 3, 2]
+      ).must_equal [2, 2, 2, 3, 3, 3, 5, 5]
   end
 
   it 'should return nil if called on an empty array' do
