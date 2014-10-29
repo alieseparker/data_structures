@@ -47,6 +47,9 @@ and groups keys together that share the same position and
 value.
 Here we're working with base 10 so we'll be using 10 seperate 'buckets'.
 
+I broke each array down by calling to_string in order to return the
+index that I wanted to group it by.
+
 ###Usage:
   Example:
   ```Ruby
@@ -61,3 +64,6 @@ Here we're working with base 10 so we'll be using 10 seperate 'buckets'.
 *[Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
 *[Github Markdown](https://help.github.com/articles/markdown-basics/)
+
+*Individuals
+  -Clare Constantine
