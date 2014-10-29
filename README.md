@@ -1,5 +1,9 @@
 # DataStructures:
 * InsertionSort
+* Merge Sort
+* Radix Sort
+* Quick Sort
+* Linked Lists
 
 ## About:
 Checkout my Data-Structures Library!
@@ -67,6 +71,22 @@ can go either way). After this partitioning, the pivot is in its final position.
 is called the partition operation.
 3. Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
 
+##Linked Lists
+Here we will make a link list using the Node Class.  Each node will
+have a value and pointer to the next node. We will include a few
+different methods to help us with our list.
+
+*insert(node) will insert the given node at the head of the list.
+*size() will return the length of the list.
+*search(val) will return the node containing 'val' in the list, if present, else nil.
+*remove(node) will remove the given node from the list, wherever it might be. Return the node's value. If it isn't found, return nil.
+*to_s() will print a comma-separated list of all values in the list, whatever they might be: "12, 'sam', :item, 'tango', 42"
+
+
+###Usage
+```Ruby
+
+```
 
 ## References:
 *Wiki
@@ -74,9 +94,13 @@ is called the partition operation.
   -[Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
   -[Radix Sort](http://en.wikipedia.org/wiki/Radix_sort)
   -[Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
+  -[Linked Lists](http://en.wikipedia.org/wiki/Linked_list)
+
 *[Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
 *[Github Markdown](https://help.github.com/articles/markdown-basics/)
+
+*[Ruby -v2.1.2 Docs](http://ruby-doc.org/core-2.1.2/)
 
 *Individuals
   -Clare Constantine (Contributed to Radix Sort)
