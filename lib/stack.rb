@@ -1,6 +1,5 @@
 require 'linked_list'
 class Stack < LinkedList
-
   def push(value)
     insert(Node.new(value))
   end
