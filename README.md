@@ -166,6 +166,22 @@ dequeue -removes the first element in
 @queue.dequeue
 ```
 
+## Hash Tables
+This is a simple implementation of a Hash Table.  Hash tables are a great
+way of sorting key/value pairs across an array of buckets
+
+* It should be of fixed size.  The number of slots in the table should be determined when the table is initialized, by passing an argument: ``foo = HashTable(1024)``
+* It should handle hash collisions by using 'buckets' to contain any values that share a hash
+* It should accept only strings as keys
+*It should implement the following methods:
+get(key) - should return the value stored with the given key
+set(key, val) - should store the given val using the given key
+hash(key) - should hash the key provided
+
+### Usage
+```Ruby
+```
+
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
@@ -175,6 +191,9 @@ dequeue -removes the first element in
   -[Linked Lists](http://en.wikipedia.org/wiki/Linked_list)
   -[Stacks]('http://en.wikipedia.org/wiki/Stack_(abstract_data_type)')
   -[Queues]('http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Queue_(data_structure).html')
+  -[Hash Tables](http://en.wikipedia.org/wiki/Hash_table)
+
+*[Eternally Confuzzled, Resource for Hashes](http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_hashing.aspx)
 
 * [Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
