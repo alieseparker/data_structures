@@ -13,7 +13,7 @@ class LinkedList
     count = 0
     current_node = head
     while current_node
-      count +=1
+      count += 1
       current_node = current_node.next
     end
     count
@@ -32,10 +32,10 @@ class LinkedList
     if current_node.value == rm_val
       @head = @head.next
     else
-      while (current_node != nil) && (current_node.next != nil) && ((current_node.next).value != rm_val)
+      while (!current_node.nil?) && (!current_node.next.nil?) && ((current_node.next).value != rm_val)
         current_node = current_node.next
       end
-      if current_node != nil && current_node.next != nil
+      if !current_node.nil? && !current_node.next.nil?
         current_node.next = (current_node.next).next
       end
     end
