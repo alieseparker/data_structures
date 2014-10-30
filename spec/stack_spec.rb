@@ -24,6 +24,6 @@ end
 describe 'Empty stack' do
   it 'should raise an exception when the stack is empty' do
     @stack = Stack.new
-    proc{ @stack.dequeue }.must_raise NoMethodError
+    proc { @stack.dequeue }.must_raise NoMethodError
   end
 end

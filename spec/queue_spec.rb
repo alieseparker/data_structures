@@ -27,8 +27,6 @@ describe 'Queues' do
 
   it 'should rais an exception if the que is empty' do
     @queue = Queue.new
-    proc{ @queue.dequeue }.must_raise NoMethodError
+    proc { @queue.dequeue }.must_raise NoMethodError
   end
 end
-
-
