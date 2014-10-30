@@ -99,6 +99,28 @@ function Car(plate, prev, next) {
 }
 ```
 
+##Usage
+
+insert - Will insert a new node into the list
+```Ruby
+insert(Node.new(new_node))
+```
+
+size - Returns an integer
+```Ruby
+linked_list.size()
+```
+
+search - Returns the value of the node
+```Ruby
+linked_list.search(node)
+```
+
+to_s - Returns a string
+```Ruby
+linked_list.to_s()
+```
+
 ## References:
 *Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
