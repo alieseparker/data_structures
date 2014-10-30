@@ -40,11 +40,30 @@ new array first.
   merge_sort(unsorted_array)
   ```
 
+## Radix Sort
+Radix sort is an interesting algorithm in that we actually wont be
+doing any comparisons. Instead it takes a different approach to sorting
+and groups keys together that share the same position and
+value.
+Here we're working with base 10 so we'll be using 10 seperate 'buckets'.
+
+I broke each array down by calling to_string in order to return the
+index that I wanted to group it by.
+
+###Usage:
+  Example:
+  ```Ruby
+  radix_sort(unsorted_array)
+
 ## References:
 *Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
   -[Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
+  -[Radix Sort](http://en.wikipedia.org/wiki/Radix_sort)
 
 *[Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
 *[Github Markdown](https://help.github.com/articles/markdown-basics/)
+
+*Individuals
+  -Clare Constantine
