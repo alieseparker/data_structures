@@ -13,7 +13,7 @@ describe 'Stack' do
 
   it 'should push a new element to the end of the stack' do
     @stack.push 'Five'
-    @stack.to_s.must_equal "'Ace', 'Two', 'Three', 'Four', 'Five'"
+    @stack.to_s.must_equal "Five, Four, Three, Two, Ace"
   end
 
   it 'should pop an element off the end of the stack' do
@@ -23,7 +23,7 @@ end
 
 describe 'Empty stack' do
   it 'should raise an exception when the stack is empty' do
-    stack = Stack.new
-    (stack.pop).must_raise NoMethodError
+    @stack = Stack.new()
+    (@stack.pop).must_raise NoMethodError
   end
 end
