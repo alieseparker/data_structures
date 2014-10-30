@@ -142,6 +142,30 @@ pop - removes the last element inserted
 ```Ruby
 @stack.pop
 ```
+
+
+## Queues
+Queues is another data structure where the rule is FIFO (First in first out)
+Queues are everywhere and are a great way of keeping track of different structures
+Think of lines waiting to place your order.  A line is a great way to organize the
+processing of data by allowing you to have a queue waiting to be processed.
+
+* enqueue(value): adds value to the queue
+* dequeue(): removes the correct item from the queue and returns its value (should raise
+an exception if the queue is empty)
+* size(): return the size of the queue. Should return 0 if the queue is empty.
+
+### Usage
+enqueue -adds an element to the end
+```Ruby
+@queue.enqueue(value)
+```
+
+dequeue -removes the first element in
+```Ruby
+@queue.dequeue
+```
+
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
@@ -150,6 +174,7 @@ pop - removes the last element inserted
   -[Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
   -[Linked Lists](http://en.wikipedia.org/wiki/Linked_list)
   -[Stacks]('http://en.wikipedia.org/wiki/Stack_(abstract_data_type)')
+  -[Queues]('http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Queue_(data_structure).html')
 
 * [Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
@@ -158,4 +183,4 @@ pop - removes the last element inserted
 * [Ruby -v2.1.2 Docs](http://ruby-doc.org/core-2.1.2/)
 
 *Individuals
-  -Clare Constantine (Contributed to Radix Sort)
+  -Clare Constantine - Assisted immensely in debugging
