@@ -139,23 +139,6 @@ pop - removes the last item inserted to the stack and returns its name
   stack_name.pop
 ```
 
-
-## Queues
-Queues is another data structure where the rule is FIFO (First in first out)
-Queues are everywhere and are a great way of keeping track of different structures
-Think of lines waiting to place your order.  A line is a great way to organize the
-processing of data by allowing you to have a queue waiting to be processed.
-
-* enqueue(value): adds value to the queue
-* dequeue(): removes the correct item from the queue and returns its value (should raise
-an exception if the queue is empty)
-* size(): return the size of the queue. Should return 0 if the queue is empty.
-
-### Usage
-```Ruby
-```
-
-
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
