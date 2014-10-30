@@ -4,16 +4,12 @@
 * Radix Sort
 * Quick Sort
 * Linked Lists
+* Stacks
+* Queue
 
 ## About:
 Checkout my Data-Structures Library!
 This should become a repository of different data-structures.
-
-## Test Suite
-  * It should sort an array
-  * It should sort an array of reapeated numbers
-  * It should return nil if array is empty
-  * It should sort an array of reversed numbers
 
 ## Insertion Sort
 This implimentation of insertion sort is |O|^2 since there
@@ -54,7 +50,7 @@ Here we're working with base 10 so we'll be using 10 seperate 'buckets'.
 I broke each array down by calling to_string in order to return the
 index that I wanted to group it by.
 
-###Usage:
+### Usage:
   Example:
   ```Ruby
   radix_sort(unsorted_array)
@@ -72,7 +68,7 @@ can go either way). After this partitioning, the pivot is in its final position.
 is called the partition operation.
 3. Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
 
-##Linked Lists
+## Linked Lists
 Here we will make a link list using the Node Class.  Each node will
 have a value and pointer to the next node. We will include a few
 different methods to help us with our list.
@@ -99,7 +95,7 @@ function Car(plate, prev, next) {
   // };
 }
 ```
-##Usage
+### Usage
 insert - Will insert a new node into the list
 ```Ruby
 insert(Node.new(new_node))
@@ -117,13 +113,14 @@ to_s - Returns a string
 linked_list.to_s()
 ```
 
-##Stacks
+## Stacks
 Stacks are a kind of data structure where the rule is first in last out.
 This means the last item you push onto a stack is the item that will be
 popped.
 I find it's easiest to think of this like a deck of cards, where the only
 card you can take will be the one on top.
-This implementation will only include two methods.
+This implementation will only include two methods. Additionally, I'm also not
+going to use an array.
 
 * push(data) - Adds a data element to the stack
 The parameter is the data element to add to the stack.
@@ -133,8 +130,32 @@ element.  If the stack is empty, attempts to call pop should raise an appropriat
 Ruby exception class.
 ### Usage
 
+push - adds a value to the Stack
+```Ruby
+  stack_name.push 'value'
+```
+pop - removes the last item inserted to the stack and returns its name
+```Ruby
+  stack_name.pop
+```
+
+
+## Queues
+Queues is another data structure where the rule is FIFO (First in first out)
+Queues are everywhere and are a great way of keeping track of different structures
+Think of lines waiting to place your order.  A line is a great way to organize the
+processing of data by allowing you to have a queue waiting to be processed.
+
+* enqueue(value): adds value to the queue
+* dequeue(): removes the correct item from the queue and returns its value (should raise
+an exception if the queue is empty)
+* size(): return the size of the queue. Should return 0 if the queue is empty.
+
+### Usage
 ```Ruby
 ```
+
+
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
@@ -142,7 +163,8 @@ Ruby exception class.
   -[Radix Sort](http://en.wikipedia.org/wiki/Radix_sort)
   -[Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
   -[Linked Lists](http://en.wikipedia.org/wiki/Linked_list)
-  -[Stacks]('http://en.wikipedia.org/wiki/Stack_(abstract_data_type)')
+  -[Stacks](http://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+  -[Queues](http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Queue_(data_structure).html)
 
 * [Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
