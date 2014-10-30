@@ -1,2 +1,2 @@
 service_name: travis-pro
-repo_token: R0uAXhLXLXMqhirUIP4Veed3N1w1cJBWO
+repo_token: <%= ENV["GIT_REPO_DATA_STRUCTURES"] %>
