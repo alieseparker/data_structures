@@ -178,6 +178,12 @@ get(key) - should return the value stored with the given key
 set(key, val) - should store the given val using the given key
 hash(key) - should hash the key provided
 
+For the purposes of this assignment I'm using a hashing method that will do
+the following:
+sum the ordinal values of the characters in a key
+and use the modulus operator to fold the result into
+an open index in the bucket.
+
 ### Usage
 ```Ruby
 ```
