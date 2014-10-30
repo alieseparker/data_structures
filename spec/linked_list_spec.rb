@@ -33,7 +33,7 @@ describe 'Linked Lists' do
   end
 
   it 'should print a comma-separated string of all values' do
-    @list.to_s.must_equal "Five, Four, Three, Two, Ace"
+    @list.to_s.must_equal 'Five, Four, Three, Two, Ace'
   end
 
 end

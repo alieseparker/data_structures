@@ -4,16 +4,12 @@
 * Radix Sort
 * Quick Sort
 * Linked Lists
+* Stacks
+* Queue
 
 ## About:
 Checkout my Data-Structures Library!
 This should become a repository of different data-structures.
-
-## Test Suite
-  * It should sort an array
-  * It should sort an array of reapeated numbers
-  * It should return nil if array is empty
-  * It should sort an array of reversed numbers
 
 ## Insertion Sort
 This implimentation of insertion sort is |O|^2 since there
@@ -54,10 +50,11 @@ Here we're working with base 10 so we'll be using 10 seperate 'buckets'.
 I broke each array down by calling to_string in order to return the
 index that I wanted to group it by.
 
-###Usage:
+### Usage:
   Example:
   ```Ruby
   radix_sort(unsorted_array)
+  ```
 
 ## Quick Sort
 Quick sort is another divide and conquer method that works by swapping values. I believe
@@ -71,16 +68,16 @@ can go either way). After this partitioning, the pivot is in its final position.
 is called the partition operation.
 3. Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
 
-##Linked Lists
+## Linked Lists
 Here we will make a link list using the Node Class.  Each node will
 have a value and pointer to the next node. We will include a few
 different methods to help us with our list.
 
-*insert(node) will insert the given node at the head of the list.
-*size() will return the length of the list.
-*search(val) will return the node containing 'val' in the list, if present, else nil.
-*remove(node) will remove the given node from the list, wherever it might be. Return the node's value. If it isn't found, return nil.
-*to_s() will print a comma-separated list of all values in the list, whatever they might be: "12, 'sam', :item, 'tango', 42"
+* insert(node) will insert the given node at the head of the list.
+* size() will return the length of the list.
+* search(val) will return the node containing 'val' in the list, if present, else nil.
+* remove(node) will remove the given node from the list, wherever it might be. Return the node's value. If it isn't found, return nil.
+* to_s() will print a comma-separated list of all values in the list, whatever they might be: "12, 'sam', :item, 'tango', 42"
 
 We build a basic double linked list in class and this is what we came up
 with.  I'm referencing this a lot to write this assignment (although,
@@ -98,42 +95,82 @@ function Car(plate, prev, next) {
   // };
 }
 ```
-
-##Usage
-
+### Usage
 insert - Will insert a new node into the list
 ```Ruby
 insert(Node.new(new_node))
 ```
-
 size - Returns an integer
 ```Ruby
 linked_list.size()
 ```
-
 search - Returns the value of the node
 ```Ruby
 linked_list.search(node)
 ```
-
 to_s - Returns a string
 ```Ruby
 linked_list.to_s()
 ```
 
+## Stacks
+Stacks are a kind of data structure where the rule is first in last out.
+This means the last item you push onto a stack is the item that will be
+popped.
+I find it's easiest to think of this like a deck of cards, where the only
+card you can take will be the one on top.
+This implementation will only include two methods. Additionally, I'm also not
+going to use an array.
+
+* push(data) - Adds a data element to the stack
+The parameter is the data element to add to the stack.
+
+* pop() - Removes a data element from the stack and returns the value of that data
+element.  If the stack is empty, attempts to call pop should raise an appropriate
+Ruby exception class.
+### Usage
+
+push - adds a value to the Stack
+```Ruby
+  stack_name.push 'value'
+```
+pop - removes the last item inserted to the stack and returns its name
+```Ruby
+  stack_name.pop
+```
+
+
+## Queues
+Queues is another data structure where the rule is FIFO (First in first out)
+Queues are everywhere and are a great way of keeping track of different structures
+Think of lines waiting to place your order.  A line is a great way to organize the
+processing of data by allowing you to have a queue waiting to be processed.
+
+* enqueue(value): adds value to the queue
+* dequeue(): removes the correct item from the queue and returns its value (should raise
+an exception if the queue is empty)
+* size(): return the size of the queue. Should return 0 if the queue is empty.
+
+### Usage
+```Ruby
+```
+
+
 ## References:
-*Wiki
+* Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
   -[Merge Sort](http://en.wikipedia.org/wiki/Merge_sort)
   -[Radix Sort](http://en.wikipedia.org/wiki/Radix_sort)
   -[Quick Sort](http://en.wikipedia.org/wiki/Quicksort)
   -[Linked Lists](http://en.wikipedia.org/wiki/Linked_list)
+  -[Stacks](http://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+  -[Queues](http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Queue_(data_structure).html)
 
-*[Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
+* [Parallel Assignment](http://stackoverflow.com/questions/4182722/swapping-array-elements-using-parallel-assignment)
 
-*[Github Markdown](https://help.github.com/articles/markdown-basics/)
+* [Github Markdown](https://help.github.com/articles/markdown-basics/)
 
-*[Ruby -v2.1.2 Docs](http://ruby-doc.org/core-2.1.2/)
+* [Ruby -v2.1.2 Docs](http://ruby-doc.org/core-2.1.2/)
 
 *Individuals
   -Clare Constantine (Contributed to Radix Sort)
