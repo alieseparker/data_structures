@@ -6,7 +6,7 @@ class Sort
     ret_array = unsorted
 
     while current_iteration < final_iteration
-      tmp = [ [], [], [], [], [], [], [], [], [], [] ]
+      tmp = [[], [], [], [], [], [], [], [], [], []]
       ret_array.each do |ele|
         ele_str = ele.to_s
         if (ele_str.length - 1 - current_iteration) < 0

@@ -1,4 +1,3 @@
-# lib/insertion_sort
 class Sort
   def self.insertion_sort(unsorted)
     return nil if unsorted.length == 0
