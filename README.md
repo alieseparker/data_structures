@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/fparker9676/data_structures/badge.png)](https://coveralls.io/r/fparker9676/data_structures)
+
 # DataStructures:
 * InsertionSort
 * Merge Sort
