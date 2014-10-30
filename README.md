@@ -133,7 +133,14 @@ element.  If the stack is empty, attempts to call pop should raise an appropriat
 Ruby exception class.
 ### Usage
 
+push - adds data onto the end of an array
 ```Ruby
+@stack.push(data)
+```
+
+pop - removes the last element inserted
+```Ruby
+@stack.pop
 ```
 ## References:
 * Wiki
