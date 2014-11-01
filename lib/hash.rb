@@ -38,7 +38,7 @@ class HashTable < LinkedList
     if @bucket[index].nil?
       fail NoMethodError, 'Nothing is here'
     else
-      @bucket[index].search(word).value.reverse
+      @bucket[index].search(word.reverse).value.reverse
     end
   end
 end

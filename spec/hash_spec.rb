@@ -12,12 +12,14 @@ describe 'Hash table' do
 
   it 'should set a value and reverse itself' do
     @hash_table.set('Finn').must_equal "nniF"
-    @hash_table.get('nniF').must_equal "Finn"
+    @hash_table.get('Finn').must_equal "Finn"
   end
 
   it 'should fail if argument is not a string' do
     proc { @hash.set(4) }.must_raise NoMethodError
   end
+
+
 end
 
 describe 'Hash hamlet' do
@@ -30,7 +32,7 @@ describe 'Hash hamlet' do
     end
 
     @hamlet.each do |word|
-      @hash_table.get(word).must_equal word.reverse
+      @hash_table.get(word).must_equal word
     end
   end
 end

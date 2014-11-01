@@ -1,15 +1,15 @@
 require 'spec_helper'
 require 'linked_list'
-require 'queue'
+require 'queuer'
 
-describe 'Queue' do
+describe 'Queuer' do
   before do
     @queue = Queue.new
-    @queue = Queue.enqueue('Forrest')
-    @queue = Queue.enqueue('Willow')
-    @queue = Queue.enqueue('Cedar')
-    @queue = Queue.enqueue('Aspen')
-    @queue = Queue.enqueue('Green')
+    @queue = Queuer.enqueue('Forrest')
+    @queue = Queuer.enqueue('Willow')
+    @queue = Queuer.enqueue('Cedar')
+    @queue = Queuer.enqueue('Aspen')
+    @queue = Queuer.enqueue('Green')
   end
 
   it 'adds value to the queue' do
@@ -26,7 +26,7 @@ describe 'Queue' do
   end
 
   it 'should rais an exception if the que is empty' do
-    @queue = Queue.new
+    @queue = Queuer.new
     proc { @queue.dequeue }.must_raise NoMethodError
   end
 end
