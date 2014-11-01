@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'linked_list'
 require 'queue'
 
-describe 'Queues' do
+describe 'Queue' do
   before do
     @queue = Queue.new
     @queue = Queue.enqueue('Forrest')

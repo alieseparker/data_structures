@@ -1,18 +1,13 @@
-Node = Struct.new(:value, :next, :reverse_word)
+List = Struct.new(:value, :next, :reverse_word)
 
-class List
-  def initialize(value, _next, reverse_word)
-    @value = value
-    @reverse_word = reverse_word
-  end
-
-  def insert(value, reverse_word = false)
+class HashList
+  def insert(value, index, reverse_word)
     if size > 0
-      new_word = Node.new(value, nil, reverse_word)
+      new_word = List.new(value, index, reverse_word)
       @tail.next = new_word
       @tail = new_word
     else
-      @tail = Node.new(value, nil, reverse_word)
+      @tail = List.new(value, index, reverse_word)
       @head = @tail
     end
   end

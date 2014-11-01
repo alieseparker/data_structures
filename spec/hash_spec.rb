@@ -7,12 +7,12 @@ describe 'Hash table' do
   end
 
   it 'should hash itself and return a value' do
-    @hash_table.hash('Adventure').must_equal 48333155387496755478141668577420870492
+    @hash_table.hash('Adventure').must_equal 361929719160197272
   end
 
   it 'should set a value and reverse itself' do
     @hash_table.set('Finn').must_equal "nniF"
-    @hash_table.set('nniF').must_equal "Finn"
+    @hash_table.get('nniF').must_equal "Finn"
   end
 
   it 'should fail if argument is not a string' do
@@ -21,16 +21,14 @@ describe 'Hash table' do
 end
 
 describe 'Hash hamlet' do
-  before do
+  it 'should retrieve all of the reversed words in the hash table' do
     file = File.new('hamlet')
     @hamlet = file.readlines.map(&:strip)
-    @hash_table = HashTable.new @hamlet.count
+    @hash_table = HashTable.new(@hamlet.count)
     @hamlet.each do |word|
       @hash_table.set(word)
     end
-  end
 
-  it 'should retrieve all of the reversed words in the hash table' do
     @hamlet.each do |word|
       @hash_table.get(word).must_equal word.reverse
     end
