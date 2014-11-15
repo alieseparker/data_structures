@@ -7,18 +7,17 @@ describe 'Hash table' do
   end
 
   it 'should hash itself and return a value' do
-    @hash_table.hash('Adventure').must_equal 361929719160197272
+    @hash_table.hash('Adventure').must_equal 361_929_719_160_197_272
   end
 
   it 'should set a value and reverse itself' do
-    @hash_table.set('Finn').must_equal "nniF"
-    @hash_table.get('Finn').must_equal "Finn"
+    @hash_table.set('Finn').must_equal 'nniF'
+    @hash_table.get('Finn').must_equal 'Finn'
   end
 
   it 'should fail if argument is not a string' do
     proc { @hash.set(4) }.must_raise NoMethodError
   end
-
 
 end
 

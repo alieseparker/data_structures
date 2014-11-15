@@ -205,6 +205,9 @@ Phil  Craig     Eddie
 Jony  Dan       Katie
 Katie Peter     Andrea
 
+I also loosely based this off of my javascript version of traversing a binary
+tree.  Ruby is so much cleaner then javascript so its so much easier to write clean
+code.
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
