@@ -4,7 +4,7 @@ require 'queuer'
 
 describe 'Queuer' do
   before do
-    @queue = Queue.new
+    @queue = LinkedList.new
     @queue = Queuer.enqueue('Forrest')
     @queue = Queuer.enqueue('Willow')
     @queue = Queuer.enqueue('Cedar')

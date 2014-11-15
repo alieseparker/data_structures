@@ -188,6 +188,23 @@ an open index in the bucket.
 ```Ruby
 ```
 
+
+## Binary Tree for apple team
+
+This app will demonstrate the different methods for traversing
+a binary tree.  We start with this:
+
+Because of recent security breaches, Apple has decided that each member of their executive
+team can only handle overseeing 2 other people at a time.
+
+They are restructuring, to look like this:
+
+Name  Report 1  Report 2
+Tim   Jony      Phil
+Phil  Craig     Eddie
+Jony  Dan       Katie
+Katie Peter     Andrea
+
 ## References:
 * Wiki
   -[Insertion Sort](http://en.wikipedia.org/wiki/Insertion_sort)
@@ -198,6 +215,9 @@ an open index in the bucket.
   -[Stacks]('http://en.wikipedia.org/wiki/Stack_(abstract_data_type)')
   -[Queues]('http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Queue_(data_structure).html')
   -[Hash Tables](http://en.wikipedia.org/wiki/Hash_table)
+  -[Binary Trees](http://en.wikipedia.org/wiki/Binary_tree)
+  -[Binary Tree Traversal](http://en.wikipedia.org/wiki/Tree_traversal)
+
 
 *[Eternally Confuzzled, Resource for Hashes](http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_hashing.aspx)
 
@@ -207,5 +227,6 @@ an open index in the bucket.
 
 * [Ruby -v2.1.2 Docs](http://ruby-doc.org/core-2.1.2/)
 
+* []
 *Individuals
   -Clare Constantine - Assisted immensely in debugging

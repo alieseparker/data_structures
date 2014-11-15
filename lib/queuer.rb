@@ -2,7 +2,7 @@ require 'linked_list'
 
 class Queuer < LinkedList
 
-  def self.enqueue(value)
+  def enqueue(value)
     insert(Node.new(value))
   end
 
